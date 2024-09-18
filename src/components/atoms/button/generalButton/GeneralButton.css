@@ -1,0 +1,72 @@
+/* Styles de base pour le bouton */
+.btn {
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 60px;
+    border-radius: var(--gutter-nano);
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Variantes de bouton */
+  
+  /* Bouton d'appel à l'action (CTA) */
+  .btn-cta {
+    color: var(--bg-color-primary);
+    background-color: var(--important);
+  }
+  
+  /* Styles au survol pour le bouton CTA en mode sombre */
+  body.dark .btn-cta:hover,
+  body.dark .btn-cta:focus {
+    box-shadow: #ffffff40 0 0 0 var(--gutter-nano);
+  }
+  
+  /* Styles au survol pour le bouton CTA en mode clair */
+  body.light .btn-cta:hover,
+  body.light .btn-cta:focus {
+    box-shadow: #07070733 0 0 0 var(--gutter-nano);
+  }
+  
+  /* Bouton secondaire */
+  .btn-secondary {
+    border: 1px solid var(--border-dark);
+    color: var(--important);
+  }
+  
+  .btn-secondary:hover,
+  .btn-secondary:focus {
+    border-color: var(--important);
+  }
+  
+  /* Bouton du menu */
+  .menu-btn {
+    border: 1px solid var(--border-dark);
+    width: 132px;
+    padding: var(--gutter-nano);
+    border-radius: var(--gutter-large);
+    background-color: var(--bg-color-secondary);
+    color: var(--important);
+  }
+  
+  /* Bouton pour le changement de langue */
+  .language-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--important);
+  }
+  
+  /* Supprimer le style par défaut des boutons */
+  .btn,
+  .btn:focus,
+  .btn:active {
+    outline: none;
+    border: none;
+  }
+  
